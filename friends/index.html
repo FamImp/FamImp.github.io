@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-  <title>Hexo</title>
+  <title>Tag   | Hexo</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -63,6 +63,10 @@
           <a href="/archives/">Archives</a>
         </li>
       
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">Categories</a>
+        </li>
+      
         <li class="nav-item" data-path="/tags/">
           <a href="/tags/">Tags</a>
         </li>
@@ -93,92 +97,40 @@
   
 
   
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title"></div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="Update time"></i>
-          2020-12-18
-        </span>
-        
-      </div>
-      <div class="markdown-body">
-        <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br></pre></td></tr></table></figure>
-
-
-<h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><p>从<strong>数据结构</strong>角度看，栈和队列也是线性表，其特殊性在于栈和队列的<u>基本操作是线性表操作的子集</u>，它们是操作受限的线性表，因此，可称为限定性的数据结构。但从<strong>数据类型</strong>角度看，它们是和线性表不相同的两类重要的抽象数据类型。</p>
-<h2 id="3-1-栈和队列的定义和特点"><a href="#3-1-栈和队列的定义和特点" class="headerlink" title="3.1 栈和队列的定义和特点"></a>3.1 栈和队列的定义和特点</h2><h3 id="3-1-1-栈的定义和特点（stack）"><a href="#3-1-1-栈的定义和特点（stack）" class="headerlink" title="3.1.1 栈的定义和特点（stack）"></a>3.1.1 栈的定义和特点（stack）</h3><p>运算规则：先进后出—手电筒</p>
-<p>常见名词：栈顶（top）、栈底（base）、空栈</p>
-<p>常用操作：压栈（push）、出栈（pop）</p>
-<p>分类：顺序栈（常）、链栈</p>
-<p>逻辑方式：同线性表（一一对应）</p>
-<h3 id="3-1-2队列的定义和特点（queue）"><a href="#3-1-2队列的定义和特点（queue）" class="headerlink" title="3.1.2队列的定义和特点（queue）"></a>3.1.2队列的定义和特点（queue）</h3><p>运算规则：先进先出—排队</p>
-<p>常见名词：队头、队尾</p>
-<p>常用操作：队尾插入（入队）、队头删除（出队）</p>
-<p>分类：顺序队、链队</p>
-<p>逻辑方式：同线性表（一一对应）</p>
-<h2 id="3-2-案例引入"><a href="#3-2-案例引入" class="headerlink" title="3.2 案例引入"></a>3.2 案例引入</h2><p>栈案例：进制转换、括号匹配检验、表达式计算</p>
-<p>队列案例：舞伴问题</p>
-<h2 id="3-3-栈的表示和操作的实现"><a href="#3-3-栈的表示和操作的实现" class="headerlink" title="3.3 栈的表示和操作的实现"></a>3.3 栈的表示和操作的实现</h2><h3 id="3-3-1-栈的抽象数据类型的类型定义"><a href="#3-3-1-栈的抽象数据类型的类型定义" class="headerlink" title="3.3.1 栈的抽象数据类型的类型定义"></a>3.3.1 栈的抽象数据类型的类型定义</h3><p>数据对象：指定的数据类型（可以为结构体）</p>
-<p>数据关系：前驱，栈顶、栈底</p>
-<p>基本操作：初始化、判断是否为空、求栈长、入栈、出栈、销毁、清空、取出栈顶元素、遍历</p>
-
-      </div>
+  <!-- 朋友页 url形式：https://yoursite/friends/ -->
+  <div class="container friend-index">
+    <div class="friend-list">
       
-        <div class="prev-or-next">
-          <div class="post-foot-next">
+        <div class="friend-list-item">
+          <span class="nickname">@ Zcheng</span>
+          <a href="https://zcheng.site/" target="_blank">
+            <span class="site-path">https://zcheng.site/</span>
+          </a>
+          <p class="card-meta">
             
-              <a href="/2020/12/18/hello-world/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>Prev</span>
-              </a>
+          </p>
+        </div>
+      
+        <div class="friend-list-item">
+          <span class="nickname">@ Hexo</span>
+          <a href="https://hexo.io/" target="_blank">
+            <span class="site-path">https://hexo.io/</span>
+          </a>
+          <p class="card-meta">
             
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="Update time"></i>
-              2020-12-18
-            </span>
-            
-          </div>
-          <div class="post-foot-prev">
-            
-          </div>
+          </p>
         </div>
       
     </div>
-    
-  <div class="post-catalog" id="catalog">
-    <div class="title">Contents</div>
-    <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-text">栈和队列</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9"><span class="toc-text">3.1 栈和队列的定义和特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-%E6%A0%88%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9%EF%BC%88stack%EF%BC%89"><span class="toc-text">3.1.1 栈的定义和特点（stack）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2%E9%98%9F%E5%88%97%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%89%B9%E7%82%B9%EF%BC%88queue%EF%BC%89"><span class="toc-text">3.1.2队列的定义和特点（queue）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%A1%88%E4%BE%8B%E5%BC%95%E5%85%A5"><span class="toc-text">3.2 案例引入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E6%A0%88%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E6%93%8D%E4%BD%9C%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">3.3 栈的表示和操作的实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1-%E6%A0%88%E7%9A%84%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89"><span class="toc-text">3.3.1 栈的抽象数据类型的类型定义</span></a></li></ol></li></ol></li></ol>
+    <div class="markdown-body">
+      
     </div>
   </div>
+  
 
   
-<script src="/js/catalog.js"></script>
 
-
-
-
-    
-      <div class="comments-container">
-        
-
-
-
-
-
-      </div>
-    
-  </div>
-
+  
 
         <div class="footer">
   <div class="social">
